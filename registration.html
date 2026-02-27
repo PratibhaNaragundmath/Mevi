@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header><h1>Registration</h1></header><!--header tag-->
+    <nav><!--nav tag-->
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section>
+        <h2>About Us</h2>
+        <p>Welcome to our student registration system. We provide a seamless experience for students to register for courses.</p>
+    </section>
+    <img src="portfolio.jpg" alt="w3schools logo"><!--image tag-->
+    <hr><!--horizontal rule tag-->
+    <h2><i>Student Registration Form</i></h2><!--heading tag with italic style-->
+    
+    <br> 
+    <form ><!--form tag -->
+        <label>Full Name:</label><br>
+        <input type="text" placeholder="fullname" required minlength="2" maxlength="100"><br><!--minimum and maximum length validation-->
+        <br>
+        <label>Email:</label><br>
+        <input type="email" placeholder="example@gmail.com"><br>
+        <br>
+        <label>Phone Number:</label><br>
+        <input type="tel " required minlength="10"placeholder="0123456789"><br>
+        <br>
+        <label>Date of Birth:</label><br>
+        <input type="date" placeholder="dd-mm-yyyy" required><br>
+        <br>
+        <label>Password:</label><br>
+        <input type="password" placeholder="........"><br>
+        <br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" value="female">female<br>
+        <br>
+        <label>course:</label>
+        <select required>
+            <option value="">Select a course</option>
+            <option>bca </option>
+            <option>bsc</option>
+            <option>B.E</option>
+            <option>mba</option>
+        </select><br>
+        <br>
+        <label>Feedback:</label><br>
+        <textarea rows="5" cols="30"></textarea><br>
+        <br>
+        <input type="checkbox" required> I agree to the terms and conditions<br>
+        <button type="submit">submit</button>
+        <button type="reset">Clear</button>
+    </form>
+      <footer>
+        <p> 2024 Student Registration. All rights reserved.</p>
+    </footer>
+</body>
+</html>

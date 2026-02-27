@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitionanimation</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+           animation: spin 2s linear infinite;
+           margin-bottom: 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .btn{
+            padding: 10px 20px;
+            border: none;
+            background-color: brown;
+            color: white;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        .btn:hover{
+            background-color: black;
+            transform: scale(2);
+        }
+        .loading{
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-radius: 50%;
+            margin: 50px;
+            border-top: rgb(64, 64, 64) solid 5px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .loader{
+            width: 50px;
+            height: 50px;
+           background-color: violet;
+           position: relative;
+           margin: 50px;
+           animation: bounce 1s infinite;
+           animation-direction: alternate;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button class="btn">click me</button>
+    <div class="loading"></div><br>
+    <div class="loader"></div>
+
+</body>
+</html>
